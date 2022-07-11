@@ -1,27 +1,21 @@
-.login {
+.add-task {
   margin: 8rem auto;
   padding: 1.5rem 2.5rem;
   width: 90%;
   max-width: 60rem;
 }
 
-.login label {
-  font-size: 1.8rem;
-  font-weight: 700;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.login input {
-  font-size: 1.4rem;
+.add-task input {
+  font-size: 1.6rem;
   display: block;
   width: 100%;
-  border: 1px solid #ccc;
+  border: none;
+  border-bottom: 0.3rem solid #ccc;
   padding: 0.8rem;
   margin-bottom: 1.5rem;
 }
 
-.login input:focus {
+.add-task input:focus {
   outline: none;
   border-color: #ff503f;
 }
