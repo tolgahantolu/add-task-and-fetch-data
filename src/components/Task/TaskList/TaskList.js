@@ -1,16 +1,16 @@
 import Card from "../../UI/Card";
 import classes from "./TaskList.module.css";
 
-const TaskList = () => {
+const TaskList = (props) => {
   return (
     <Card className={classes["task-list"]}>
       <ul>
-        <li>
-          <p>Learn React and Redux</p>
-        </li>
-        <li>
-          <p>GraphQL API Project (MASTER)</p>
-        </li>
+        {/* Task.js */}
+        {props.tasks.map((task) => (
+          <li key={task.id}>
+            <p>{task.name}</p>
+          </li>
+        ))}
       </ul>
     </Card>
   );
