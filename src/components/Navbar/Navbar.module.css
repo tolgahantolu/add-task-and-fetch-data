@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+  background-color: #1c1d1c;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  padding: 0 10rem;
+}
+
+.navbar h2 {
+  font-size: 4rem;
+  color: #fafaf9;
+  font-weight: 700;
+}
