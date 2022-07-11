@@ -11,6 +11,7 @@ const AddTask = (props) => {
     e.preventDefault();
 
     if (enteredTask.trim().length === 0) {
+      alert("Please anter a valid text.");
       return;
     }
 
