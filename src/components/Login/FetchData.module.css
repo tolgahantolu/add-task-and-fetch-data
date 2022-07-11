@@ -1,0 +1,23 @@
+.fetchBtn {
+  display: block;
+  margin: 8rem auto 2rem auto;
+}
+
+.fetch {
+  margin: 0 auto;
+  padding: 1.5rem 2.5rem;
+  width: 90%;
+  max-width: 60rem;
+}
+
+.fetch ul {
+  list-style: none;
+}
+
+.fetch li {
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-bottom: 2px solid #ff503f;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}

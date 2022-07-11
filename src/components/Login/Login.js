@@ -3,6 +3,7 @@ import { useState } from "react";
 import Task from "../Task/Task";
 import Button from "../UI/Button";
 import Card from "../UI/Card";
+import FetchData from "./FetchData";
 import classes from "./Login.module.css";
 
 const Login = () => {
@@ -35,27 +36,30 @@ const Login = () => {
   return (
     <>
       {!showTask && (
-        <Card className={classes.login}>
-          <form>
-            <label htmlFor="email"> Email: </label>
-            <input
-              id="email"
-              type="email"
-              placeholder="email"
-              onChange={emailChangeHandler}
-            />
+        <>
+          <Card className={classes.login}>
+            <form>
+              <label htmlFor="email"> Email: </label>
+              <input
+                id="email"
+                type="email"
+                placeholder="email"
+                onChange={emailChangeHandler}
+              />
 
-            <label htmlFor="password"> Password: </label>
-            <input
-              id="password"
-              type="password"
-              placeholder="password"
-              onChange={passwordChangeHandler}
-            />
+              <label htmlFor="password"> Password: </label>
+              <input
+                id="password"
+                type="password"
+                placeholder="password"
+                onChange={passwordChangeHandler}
+              />
 
-            <Button onClick={onLoginHandler}> Login </Button>
-          </form>
-        </Card>
+              <Button onClick={onLoginHandler}> Login </Button>
+            </form>
+          </Card>
+          <FetchData />
+        </>
       )}
       {showTask && <Task />}
     </>

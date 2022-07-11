@@ -21,7 +21,7 @@ const Navbar = () => {
       {info && (
         <InfoModal
           title="Add Task and Fetch Data Project"
-          message="To log in to the application, enter any text with @ in the email section and at least 6-digit content in the password section. Tolgahan | Frontend Developer"
+          message="To log in to the application, enter any text with @ in the email section and at least 6-digit content in the password section. You can also request from the API by pressing the Fetch Data button. @Tolgahan 👻"
           onConfirm={onConfirm}
         />
       )}
